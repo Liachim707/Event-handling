@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Image gallery</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" id="gallery">
+      <img src="https://picsum.photos/240/220?random=1" alt="Image 1" />
+
+      <img src="https://picsum.photos/240/220?random=2" alt="Image 2" />
+
+      <img src="https://picsum.photos/240/220?random=3" alt="Image 3" />
+
+      <img src="https://picsum.photos/240/220?random=4" alt="Image 4" />
+    </div>
+
+    <div class="button-container">
+      <button class="gallery-button" id="new-images" type="button">
+        New images
+      </button>
+
+      <button class="gallery-button" id="add-image" type="button">
+        Add image
+      </button>
+
+      <button class="gallery-button" id="delete-image" type="button">
+        Delete image
+      </button>
+    </div>
+
+    <p class="author">Random image app by <b>Michael</b></p>
+
+    <!-- Окно полноэкранного просмотра -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image preview"
+      hidden
+    >
+      <button
+        class="lightbox-close"
+        id="close-lightbox"
+        type="button"
+        aria-label="Close preview"
+      >
+        &times;
+      </button>
+
+      <img id="lightbox-image" src="" alt="Full size image" />
+    </div>
+  </body>
+</html>
